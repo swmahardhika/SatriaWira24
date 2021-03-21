@@ -1,0 +1,10 @@
+@media screen and(max-width: 992px){
+    .text-red{
+      color: blue;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .text-red{
+      color: green;
+    }
+  }
