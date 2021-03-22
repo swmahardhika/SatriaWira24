@@ -13,14 +13,14 @@
   }
   .wrap {
       background-color:rgba(255, 255, 255, 0.7);
-      width: 800px;
+      max-width: 800px;
       color:black;
       margin: 20px auto;
       padding:15px;
   }
   .iconbg {
     background-color: rgba(255, 255, 255, 0.7);
-    width: 260px;
+    max-width: 260px;
     margin: 20px auto;
     text-align: center;
     padding: 15px;
@@ -34,17 +34,18 @@
   }
 </style>
 <body>
-    <body style="background: url(abc.jpg); background-size: cover;background-attachment: fixed;"></body>
+    <body style="max-width: 100%; background: url(abc.jpg); background-size: cover;background-attachment: fixed;"></body>
     <section class="wrap" style="text-align: center;">
-        <img style="border-radius: 100%;" style="stroke-width: 10pt;" src="Insta.png" height="200" width="200">
+        <img style="border-radius: 100%; max-width: 100%; height: auto;"  src="Insta.png">
         <h1 class="h1">Satria Wirabuana Mahardhika</h1>
         <h2 style="font-size: 16px; font-weight: lighter;">"Jika tugas mengganggu mu, maka tinggalkanlah."</h2>
         <h3 style="font-size: 16px; font-weight: bolder;">Universitas Muhammadiyah Yogyakarta</h3>
     </section>
-    <section class="wrap" class="td">
-        <table width="480px">
-            <tbody>
+    <section class="wrap" style="font-size: 15pt;">
+        <table max-width="480px">
 
+            <tbody>
+              
               <tr>
                 <td widht="25%">Tempat, Tanggal Lahir</td>
                 <td widht="1%">:</td>
@@ -64,7 +65,7 @@
         <hr>
         <span><b>Pendidikan Formal</b></span>
         <hr>
-        <table width="800px">
+        <table max-width="800px">
             <tbody>
               <tr>
                 <td width="25%">2019 - Sekarang</td>
@@ -96,7 +97,7 @@
         <hr>
         <span><b>Pengalaman Organisasi</b></span>
         <hr>
-          <table width="800px">
+          <table max-width="800px">
            <tbody>
               <tr>
                 <td width="25%">2018 - Sekarang</td>
@@ -114,13 +115,13 @@
     </section>
     <section class="iconbg" style="text-align: center; ">
         <a class="icon" href="https://www.instagram.com/swmahardhika/">
-            <img src="ig.png" height="50" width="50" >
+            <img media="(max-width: 50)"; src="ig.png" height="50">
         </a>
         <a class="icon" href="https://twitter.com/heymyluvv">
-            <img src="tw.png" height="50" width="50" >
+            <img media="(max-width: 50)"; src="tw.png" height="50">
         </a>
         <a class="icon" href="https://www.facebook.com/satriawirabuana/">
-            <img src="fb.png" height="50" width="50" >
+            <img media="(max-width: 50)"; src="fb.png" height="50">
         </a>
     </section>
 </body>
